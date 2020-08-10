@@ -30,6 +30,7 @@ Note that Accuracy, Precision, Recall and F1 Score are values between 0 and 1.Th
 
 We also make sure to check the Confusion Matrix for each fold (see link for explanation), to make sure that the models are not systematically making the same mistakes (like a strong proportion of false positives or false negatives compared to true positives or true negatives).
 
+Note that Nearest Neighbor Model is an 11-to-13-Nearest Neighbor Model (we use a loop for every K-Nearest Neighbor Model for k ranging from 1 to 100; in this case, the model with the smallest training and out-of-sample error varies between 11 and 13 neighbors). We must acknowledge that this means the model is prone to overfitting and can have a high variance. Luckily, we also have our two other models to help compare.
 
 **Playoff Team Classification**
 
